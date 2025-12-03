@@ -1,0 +1,18 @@
+
+
+body {
+    font-family: Arial, sans-serif; /* Police du texte */
+    margin: 0; /* Supprime les marges */
+    padding: 0; /* Supprime les espacements */
+    background-color: #f9f9f9; /* Couleur de fond gris clair */
+}
+
+
+header {
+    background-color: #4CAF50; /* Fond vert pour le header */
+    color: white; /* Texte en blanc */
+    text-align: center; /* Centre le texte horizontalement */
+    padding: 2rem; /* Ajoute de l’espace autour du contenu */
+}
+
+
