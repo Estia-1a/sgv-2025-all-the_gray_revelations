@@ -13,7 +13,7 @@ header {
     color: white; /* Texte en blanc */
     text-align: center; /* Centre le texte */
     padding: 2rem; /* Espacement interne */
-    height: 300px; /* Hauteur du header */
+    height: 150px; /* Hauteur du header */
     background-image: url('../media/pictures/piyal-pakira-VYKhztyEh44-unsplash.jpg'); /* Image en fond */
     background-size: cover; /* L'image couvre toute la zone */
     background-position: center; /* Centrée */
