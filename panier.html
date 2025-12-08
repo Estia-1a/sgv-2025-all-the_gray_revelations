@@ -21,5 +21,103 @@
     <li class="inté"><a href="./panier.html"> Votre Panier </a></li>
   </ul>
     </nav>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Panier - Maraîcher de Bidart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="page-panier">
+
+  <header class="site-header">
+    <h1 class="site-title">Mon panier</h1>
+
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+        <li class="nav-item"><a href="produits.html" class="nav-link">Produits</a></li>
+        <li class="nav-item"><a href="panier.html" class="nav-link active">Panier</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="panier-main">
+
+    <section class="panier-liste">
+
+      <article class="panier-produit">
+        <img src="carotte.jpg" alt="Carottes" class="produit-image">
+
+        <div class="produit-info">
+          <h3 class="produit-nom">Carottes</h3>
+          <p class="produit-prix">2,00 € / kg</p>
+        </div>
+
+        <div class="produit-quantite">
+          <label class="quantite-label">Quantité :</label>
+          <input type="number" value="1" min="1" class="quantite-input">
+        </div>
+
+        <div class="produit-total">
+          <p class="total-text">Total :</p>
+          <p class="total-prix">2,00 €</p>
+        </div>
+
+        <button class="produit-supprimer">❌</button>
+      </article>
+
+      <article class="panier-produit">
+        <img src="tomate.jpg" alt="Tomates" class="produit-image">
+
+        <div class="produit-info">
+          <h3 class="produit-nom">Tomates</h3>
+          <p class="produit-prix">3,00 € / kg</p>
+        </div>
+
+        <div class="produit-quantite">
+          <input type="number" value="2" min="1" class="quantite-input">
+        </div>
+
+        <div class="produit-total">
+          <p class="total-prix">6,00 €</p>
+        </div>
+
+        <button class="produit-supprimer">❌</button>
+      </article>
+
+    </section>
+
+    <aside class="panier-resume">
+      <h2 class="resume-titre">Résumé</h2>
+
+      <div class="resume-ligne">
+        <span>Sous-total :</span>
+        <span>8,00 €</span>
+      </div>
+
+      <div class="resume-ligne">
+        <span>Frais :</span>
+        <span>0,00 €</span>
+      </div>
+
+      <div class="resume-total">
+        <strong>Total :</strong>
+        <strong>8,00 €</strong>
+      </div>
+
+      <button class="commande-bouton">Valider la commande</button>
+    </aside>
+
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-text">© 2025 - Maraîcher de Bidart</p>
+  </footer>
+
+</body>
+</html>
+
 </body>
 </html>
