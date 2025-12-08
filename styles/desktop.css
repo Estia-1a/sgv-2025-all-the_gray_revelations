@@ -24,8 +24,8 @@ header {
 
 nav ul {
     list-style: none; /* Supprime les puces des listes */
-    margin: 0; /* Supprime la marge par défaut */
-    padding: 0; /* Supprime le padding par défaut */
+    margin: 0; /* Supprime la marge */
+    padding: 0; /* Supprime le padding */
     display: flex; /* Utilise Flexbox pour aligner les éléments sur une ligne */
     justify-content: center; /* Centre les éléments horizontalement */
     background-color: #333; /* Fond gris foncé pour la barre de navigation */
