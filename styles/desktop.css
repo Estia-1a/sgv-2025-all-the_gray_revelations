@@ -8,11 +8,30 @@ body {
 }
 
 
+
 header {
-    background-color: #4CAF50; /* Fond vert pour le header */
     color: white; /* Texte en blanc */
-    text-align: center; /* Centre le texte horizontalement */
-    padding: 2rem; /* Ajoute de l’espace autour du contenu */
+    text-align: center; /* Centre le texte */
+    padding: 2rem; /* Espacement interne */
+    height: 300px; /* Hauteur du header */
+    background-image: url('../media/pictures/piyal-pakira-VYKhztyEh44-unsplash.jpg'); /* Image en fond */
+    background-size: cover; /* L'image couvre toute la zone */
+    background-position: center; /* Centrée */
+    background-repeat: no-repeat; /* Pas de répétition */
 }
 
+
+
+nav ul {
+    list-style: none; /* Supprime les puces des listes */
+    margin: 0; /* Supprime la marge par défaut */
+    padding: 0; /* Supprime le padding par défaut */
+    display: flex; /* Utilise Flexbox pour aligner les éléments sur une ligne */
+    justify-content: center; /* Centre les éléments horizontalement */
+    background-color: #333; /* Fond gris foncé pour la barre de navigation */
+}
+
+nav li {
+    margin: 0 15px; /* Ajoute un espace de 15px entre chaque élément */
+}
 
