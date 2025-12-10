@@ -20,112 +20,119 @@
     <li class="inté"><a href="./panier.html"> Votre Panier </a></li>
   </ul>
     </nav>
-    <main>
-        <section>
-            <h2>Produits sélectionnés</h2>
+    <!-- MAIN CONTENT -->
+    <main class="panier-main">
 
-            <div>
-                <article>
-                    <p>[légume1]</p>
-                    <div>
-                        <label>Prix :</label>
-                        <input type="text" value="3.40">
-                        <label>Qté :</label>
-                        <input type="number" value="1" min="1">
+        <!-- SECTION PRODUITS -->
+        <section class="panier-products">
+            <h2 class="section-title">Produits sélectionnés</h2>
+
+            <div class="products-list">
+                <article class="product-item">
+                    <p class="product-name">[légume1]</p>
+                    <div class="product-details">
+                        <label class="product-label">Prix :</label>
+                        <input class="product-price" type="text" value="3.40">
+                        <label class="product-label">Qté :</label>
+                        <input class="product-quantity" type="number" value="1" min="1">
                     </div>
-                
-                </article>
-                
-                <article>
-                    <p>[légume2]</p>
-                    <div>
-                        <label>Prix :</label>
-                        <input type="text" value="2.90">
-                        <label>Qté :</label>
-                        <input type="number" value="1" min="1">
-                    </div>
-              
                 </article>
 
-                <article>
-                    <p>[Image légume3]</p>
-                    <div>
-                        <label>Prix :</label>
-                        <input type="text" value="3.40">
-                        <label>Qté :</label>
-                        <input type="number" value="1" min="1">
+                <article class="product-item">
+                    <p class="product-name">[légume2]</p>
+                    <div class="product-details">
+                        <label class="product-label">Prix :</label>
+                        <input class="product-price" type="text" value="2.90">
+                        <label class="product-label">Qté :</label>
+                        <input class="product-quantity" type="number" value="1" min="1">
                     </div>
-               
-                </article>
-                
-                <article>
-                    <p>[Image légume 4]</p>
-                    <div>
-                        <label>Prix :</label>
-                        <input type="text" value="2.90">
-                        <label>Qté :</label>
-                        <input type="number" value="1" min="1">
-                    </div>
-                
                 </article>
 
-                <article>
-                    <p>[Image légume 5]</p>
-                    <div>
-                        <label>Prix :</label>
-                        <input type="text" value="3.40">
-                        <label>Qté :</label>
-                        <input type="number" value="1" min="1">
+                <article class="product-item">
+                    <p class="product-name">[Image légume3]</p>
+                    <div class="product-details">
+                        <label class="product-label">Prix :</label>
+                        <input class="product-price" type="text" value="3.40">
+                        <label class="product-label">Qté :</label>
+                        <input class="product-quantity" type="number" value="1" min="1">
                     </div>
-             
                 </article>
-                
-                <article>
-                    <p>[Image légume 6]</p>
-                    <div>
-                        <label>Prix :</label>
-                        <input type="text" value="2.90">
-                        <label>Qté :</label>
-                        <input type="number" value="1" min="1">
+
+                <article class="product-item">
+                    <p class="product-name">[Image légume4]</p>
+                    <div class="product-details">
+                        <label class="product-label">Prix :</label>
+                        <input class="product-price" type="text" value="2.90">
+                        <label class="product-label">Qté :</label>
+                        <input class="product-quantity" type="number" value="1" min="1">
                     </div>
-        
+                </article>
+
+                <article class="product-item">
+                    <p class="product-name">[Image légume5]</p>
+                    <div class="product-details">
+                        <label class="product-label">Prix :</label>
+                        <input class="product-price" type="text" value="3.40">
+                        <label class="product-label">Qté :</label>
+                        <input class="product-quantity" type="number" value="1" min="1">
+                    </div>
+                </article>
+
+                <article class="product-item">
+                    <p class="product-name">[Image légume6]</p>
+                    <div class="product-details">
+                        <label class="product-label">Prix :</label>
+                        <input class="product-price" type="text" value="2.90">
+                        <label class="product-label">Qté :</label>
+                        <input class="product-quantity" type="number" value="1" min="1">
+                    </div>
                 </article>
             </div>
         </section>
 
-        <aside>
-            <h2>Résumé de votre achat:</h2>
+        <!-- ASIDE PANIER -->
+        <aside class="panier-summary">
+            <h2 class="section-title">Résumé de votre achat</h2>
             
-            <table>
-    <thead>
-        <tr>
-            <th>Nom du produit</th>
-            <th>Quantité</th>
-            <th>Prix Total (€)</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr><td>Pomme Gala</td><td>3 kg</td><td>8.70</td></tr> <tr><td>Banane</td><td>1 kg</td><td>2.20</td></tr> <tr><td>Carotte</td><td>2 kg</td><td>3.60</td></tr> <tr><td>Tomate Grappe</td><td>1.5 kg</td><td>5.10</td></tr> <tr><td>Fraise</td><td>2 barquettes</td><td>13.00</td></tr> <tr><td>Courgette</td><td>3 unités</td><td>6.30</td></tr> <tr><td>Raisin Blanc</td><td>1 kg</td><td>4.90</td></tr> <tr><td>Aubergine</td><td>2 unités</td><td>6.00</td></tr> </tbody>
-    <tfoot>
-        <tr>
-            <td><strong>Total général</strong></td> 
-            <td></td>
-            <td><strong>49.80 €</strong></td>
-        </tr>
-    </tfoot>
-</table>
+            <table class="summary-table">
+                <thead>
+                    <tr>
+                        <th>Nom du produit</th>
+                        <th>Quantité</th>
+                        <th>Prix Total (€)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Pomme Gala</td><td>3 kg</td><td>8.70</td></tr>
+                    <tr><td>Banane</td><td>1 kg</td><td>2.20</td></tr>
+                    <tr><td>Carotte</td><td>2 kg</td><td>3.60</td></tr>
+                    <tr><td>Tomate Grappe</td><td>1.5 kg</td><td>5.10</td></tr>
+                    <tr><td>Fraise</td><td>2 barquettes</td><td>13.00</td></tr>
+                    <tr><td>Courgette</td><td>3 unités</td><td>6.30</td></tr>
+                    <tr><td>Raisin Blanc</td><td>1 kg</td><td>4.90</td></tr>
+                    <tr><td>Aubergine</td><td>2 unités</td><td>6.00</td></tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td><strong>Total général</strong></td>
+                        <td></td>
+                        <td><strong>49.80 €</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
 
-            <div>
+            <div class="promo-code">
                 <label for="promo-code-input">Codes Promos :</label>
-                <input type="text" id="promo-code-input">
+                <input type="text" id="promo-code-input" class="promo-input">
             </div>
 
-            <button>Paiement</button>
+            <button class="checkout-btn">Paiement</button>
         </aside>
 
     </main>
 
-    <footer>
+    <!-- FOOTER -->
+    <footer class="site-footer">
         <p>© 2025 - Maraîcher à Bidart</p>
     </footer>
 
