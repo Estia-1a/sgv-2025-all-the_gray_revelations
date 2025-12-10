@@ -62,7 +62,12 @@ h2 {
     margin-bottom: 10px; /* Espace sous le titre */
 }
 
-p {
+h3 {
     line-height: 1.6; /* Augmente l’espace entre les lignes pour la lisibilité */
     color: #ffffff; /* Texte en gris foncé */
+}
+
+p {
+    line-height: 1.6; /* Augmente l’espace entre les lignes pour la lisibilité */
+    color: #000000; /* Texte en gris foncé */
 }
