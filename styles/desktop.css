@@ -69,5 +69,35 @@ h3 {
 
 p {
     line-height: 1.6; /* Augmente l’espace entre les lignes pour la lisibilité */
-    color: #000000; /* Texte en gris foncé */
+    color: #000000; /* Texte couleur */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-content:center,space-between;
+    order: 3;
+    background: #978989;
+    padding: 50px;
+    border-radius: 70px;
+    box-shadow: 0 6px 20px rgba(0,0,0,.06);
+    margin: 1rem, auto ; /* Centre et ajoute 20px */
+    gap : 20px;
+      
+}
+.item{
+    display: flex;
+    order: 3;
+    background: #fff;
+    padding: 20px 24px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,.06);
+    margin-bottom: 20px ;
+    flex-direction: row;
+    align-content:center,space-between;
+    flex-wrap: wrap;
+    flex-grow: 3;
+    gap : 20px;
+    width: 50px;
+    height: 150px;
 }
