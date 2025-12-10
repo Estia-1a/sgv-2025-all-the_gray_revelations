@@ -20,92 +20,121 @@
     <li class="inté"><a href="./panier.html"> Votre Panier </a></li>
   </ul>
     </nav>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>Panier - Maraîcher de Bidart</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body class="page-panier">
+    <!-- MAIN CONTENT -->
+    <main class="panier-main">
 
- 
+        <!-- SECTION PRODUITS -->
+        <section class="panier-products">
+            <h2 class="section-title">Produits sélectionnés</h2>
 
-  <main class="panier-main">
+            <div class="products-list">
+                <article class="product-item">
+                    <p class="product-name">[légume1]</p>
+                    <div class="product-details">
+                        <label class="product-label">Prix :</label>
+                        <input class="product-price" type="text" value="3.40">
+                        <label class="product-label">Qté :</label>
+                        <input class="product-quantity" type="number" value="1" min="1">
+                    </div>
+                </article>
 
-    <section class="panier-liste">
+                <article class="product-item">
+                    <p class="product-name">[légume2]</p>
+                    <div class="product-details">
+                        <label class="product-label">Prix :</label>
+                        <input class="product-price" type="text" value="2.90">
+                        <label class="product-label">Qté :</label>
+                        <input class="product-quantity" type="number" value="1" min="1">
+                    </div>
+                </article>
 
-      <article class="panier-produit">
-        <img src="carotte.jpg" alt="Carottes" class="produit-image">
+                <article class="product-item">
+                    <p class="product-name">[Image légume3]</p>
+                    <div class="product-details">
+                        <label class="product-label">Prix :</label>
+                        <input class="product-price" type="text" value="3.40">
+                        <label class="product-label">Qté :</label>
+                        <input class="product-quantity" type="number" value="1" min="1">
+                    </div>
+                </article>
 
-        <div class="produit-info">
-          <h3 class="produit-nom">Carottes</h3>
-          <p class="produit-prix">2,00 € / kg</p>
-        </div>
+                <article class="product-item">
+                    <p class="product-name">[Image légume4]</p>
+                    <div class="product-details">
+                        <label class="product-label">Prix :</label>
+                        <input class="product-price" type="text" value="2.90">
+                        <label class="product-label">Qté :</label>
+                        <input class="product-quantity" type="number" value="1" min="1">
+                    </div>
+                </article>
 
-        <div class="produit-quantite">
-          <label class="quantite-label">Quantité :</label>
-          <input type="number" value="1" min="1" class="quantite-input">
-        </div>
+                <article class="product-item">
+                    <p class="product-name">[Image légume5]</p>
+                    <div class="product-details">
+                        <label class="product-label">Prix :</label>
+                        <input class="product-price" type="text" value="3.40">
+                        <label class="product-label">Qté :</label>
+                        <input class="product-quantity" type="number" value="1" min="1">
+                    </div>
+                </article>
 
-        <div class="produit-total">
-          <p class="total-text">Total :</p>
-          <p class="total-prix">2,00 €</p>
-        </div>
+                <article class="product-item">
+                    <p class="product-name">[Image légume6]</p>
+                    <div class="product-details">
+                        <label class="product-label">Prix :</label>
+                        <input class="product-price" type="text" value="2.90">
+                        <label class="product-label">Qté :</label>
+                        <input class="product-quantity" type="number" value="1" min="1">
+                    </div>
+                </article>
+            </div>
+        </section>
 
-        <button class="produit-supprimer">❌</button>
-      </article>
+        <!-- ASIDE PANIER -->
+        <aside class="panier-summary">
+            <h2 class="section-title">Résumé de votre achat</h2>
+            
+            <table class="summary-table">
+                <thead>
+                    <tr>
+                        <th>Nom du produit</th>
+                        <th>Quantité</th>
+                        <th>Prix Total (€)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Pomme Gala</td><td>3 kg</td><td>8.70</td></tr>
+                    <tr><td>Banane</td><td>1 kg</td><td>2.20</td></tr>
+                    <tr><td>Carotte</td><td>2 kg</td><td>3.60</td></tr>
+                    <tr><td>Tomate Grappe</td><td>1.5 kg</td><td>5.10</td></tr>
+                    <tr><td>Fraise</td><td>2 barquettes</td><td>13.00</td></tr>
+                    <tr><td>Courgette</td><td>3 unités</td><td>6.30</td></tr>
+                    <tr><td>Raisin Blanc</td><td>1 kg</td><td>4.90</td></tr>
+                    <tr><td>Aubergine</td><td>2 unités</td><td>6.00</td></tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td><strong>Total général</strong></td>
+                        <td></td>
+                        <td><strong>49.80 €</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
 
-      <article class="panier-produit">
-        <img src="tomate.jpg" alt="Tomates" class="produit-image">
+            <div class="promo-code">
+                <label for="promo-code-input">Codes Promos :</label>
+                <input type="text" id="promo-code-input" class="promo-input">
+            </div>
 
-        <div class="produit-info">
-          <h3 class="produit-nom">Tomates</h3>
-          <p class="produit-prix">3,00 € / kg</p>
-        </div>
+            <button class="checkout-btn">Paiement</button>
+        </aside>
 
-        <div class="produit-quantite">
-          <input type="number" value="2" min="1" class="quantite-input">
-        </div>
+    </main>
 
-        <div class="produit-total">
-          <p class="total-prix">6,00 €</p>
-        </div>
-
-        <button class="produit-supprimer">❌</button>
-      </article>
-
-    </section>
-
-    <aside class="panier-resume">
-      <h2 class="resume-titre">Résumé</h2>
-
-      <div class="resume-ligne">
-        <span>Sous-total :</span>
-        <span>8,00 €</span>
-      </div>
-
-      <div class="resume-ligne">
-        <span>Frais :</span>
-        <span>0,00 €</span>
-      </div>
-
-      <div class="resume-total">
-        <strong>Total :</strong>
-        <strong>8,00 €</strong>
-      </div>
-
-      <button class="commande-bouton">Valider la commande</button>
-    </aside>
-
-  </main>
-
-  <footer class="site-footer">
-    <p class="footer-text">© 2025 - Maraîcher de Bidart</p>
-  </footer>
-
-</body>
-</html>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>© 2025 - Maraîcher à Bidart</p>
+    </footer>
 
 </body>
 </html>

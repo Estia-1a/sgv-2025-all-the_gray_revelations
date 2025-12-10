@@ -27,10 +27,10 @@
   <section>
     <h2 class="sous-titres">Nous contacter</h2>
 
-    <h3>
-      Vous pouvez nous joindre pour connaître les disponibilités, passer une commande
+    <p>
+      Vous pouvez nous joindre pour avoir des informations sur votre commande, sur l'état de votre livraison
       ou poser une question sur nos produits locaux.
-    </h3>
+    </p>
 
     <p class="Coordonnées">
       📍 <strong>Adresse :</strong> Bidart, Pays Basque<br>
@@ -49,6 +49,27 @@
 
       <label for="email" class="formformulaire">Email :</label><br>
       <input type="email" id="email" name="email" required><br><br>
+
+      <label class="formformulaire">Objet du message :</label><br>
+
+<div class="objet-message">
+    <label>
+        <input type="radio" name="objet" value="livraison" required>
+        Livraison
+    </label><br>
+
+    <label>
+        <input type="radio" name="objet" value="commande">
+        Commande
+    </label><br>
+
+    <label>
+        <input type="radio" name="objet" value="infos-produits">
+        Informations sur les produits
+    </label>
+</div>
+
+<br>
 
       <label for="message" class="formformulaire">Message :</label><br>
       <textarea id="message" name="message" rows="5" required></textarea><br><br>
@@ -77,7 +98,7 @@
 </main>
 
 <footer>
-  <p class="findepage">© 2025 - Maraîcher à Bidart - Produits locaux et de saison</p>
+  <p class="findepage">© 2025 - Maraîcher de Bidart</p>
 </footer>
 
 </body>
