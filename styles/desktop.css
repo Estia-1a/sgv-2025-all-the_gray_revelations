@@ -8,11 +8,66 @@ body {
 }
 
 
+
 header {
-    background-color: #4CAF50; /* Fond vert pour le header */
     color: white; /* Texte en blanc */
-    text-align: center; /* Centre le texte horizontalement */
-    padding: 2rem; /* Ajoute de l’espace autour du contenu */
+    text-align: center; /* Centre le texte */
+    padding: 2rem; /* Espacement interne */
+    height: 150px; /* Hauteur du header */
+    background-image: url('../media/pictures/piyal-pakira-VYKhztyEh44-unsplash.jpg'); /* Image en fond */
+    background-size: cover; /* L'image couvre toute la zone */
+    background-position: center; /* Centrée */
+    background-repeat: no-repeat; /* Pas de répétition */
 }
 
 
+
+nav ul {
+    list-style: none; /* Supprime les puces des listes */
+    margin: 0; /* Supprime la marge */
+    padding: 0; /* Supprime le padding */
+    display: flex; /* Utilise Flexbox pour aligner les éléments sur une ligne */
+    justify-content: center; /* Centre les éléments horizontalement */
+    background-color: #333; /* Fond gris foncé pour la barre de navigation */
+}
+
+nav li {
+    margin: 0 15px; /* Ajoute un espace de 15px entre chaque élément */
+}
+
+nav a {
+    color: white; /* Texte des liens en blanc */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    padding: 14px 20px; /* Ajoute de l’espace autour du texte (effet bouton) */
+    display: inline-block; /* Permet de gérer la taille et le padding */
+    transition: background-color 0.3s; /* Animation fluide pour le changement de couleur */
+}
+
+nav a:hover {
+    background-color: #56b059; /* Fond vert au survol */
+}
+
+main {
+    max-width: 900px; /* Limite la largeur à 900px  */
+    margin: 20px auto; /* Centre et ajoute 20px */
+    padding: 20px; /* Ajoute de l’espace */
+    background-color: white; /* Fond blanc */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Ombre pour donner du relief */
+}
+
+/* ===== Titres et paragraphes ===== */
+h2 {
+    color: #4CAF50; /* Couleur verte pour les titres */
+    margin-bottom: 10px; /* Espace sous le titre */
+}
+
+h3 {
+    line-height: 1.6; /* Augmente l’espace entre les lignes pour la lisibilité */
+    color: #ffffff; /* Texte en gris foncé */
+}
+
+p {
+    line-height: 1.6; /* Augmente l’espace entre les lignes pour la lisibilité */
+    color: #000000; /* Texte en gris foncé */
+}
