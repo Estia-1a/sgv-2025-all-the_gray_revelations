@@ -4,13 +4,13 @@ body {
     font-family: Arial, sans-serif; /* Police du texte */
     margin: 0; /* Supprime les marges */
     padding: 0; /* Supprime les espacements */
-    background-color: #f9f9f9; /* Couleur de fond gris clair */
+    background-color: #60606078; /* Couleur de fond gris clair */
 }
 
 
 
 header {
-    color: white; /* Texte en blanc */
+    color: rgb(255, 255, 255); /* Texte en blanc */
     text-align: center; /* Centre le texte */
     padding: 2rem; /* Espacement interne */
     height: 150px; /* Hauteur du header */
@@ -56,7 +56,7 @@ main {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Ombre pour donner du relief */
 }
 
-/* ===== Titres et paragraphes ===== */
+
 h2 {
     color: #4CAF50; /* Couleur verte pour les titres */
     margin-bottom: 10px; /* Espace sous le titre */
