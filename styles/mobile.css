@@ -1,117 +1,153 @@
 
-
 body {
-    font-family: Arial, sans-serif; /* Police du texte */
-    margin: 0; /* Supprime les marges */
-    padding: 0; /* Supprime les espacements */
-    background-color: #60606078; /* Couleur de fond gris clair */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(96,96,96,0.47);
 }
-
 
 
 header {
-    color: rgb(255, 255, 255); /* Texte en blanc */
-    text-align: center; /* Centre le texte */
-    padding: 2rem; /* Espacement interne */
-    height: 150px; /* Hauteur du header */
-    background-image: url('../media/pictures/piyal-pakira-VYKhztyEh44-unsplash.jpg'); /* Image en fond */
-    background-size: cover; /* L'image couvre toute la zone */
-    background-position: center; /* Centrée */
-    background-repeat: no-repeat; /* Pas de répétition */
+  color: #fff;
+  text-align: center;
+  padding: 1.25rem;
+  height: 120px;
+  background-image: url('../media/pictures/piyal-pakira-VYKhztyEh44-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
-
+header h1 {
+  font-size: 1.25rem;
+  margin: 0 0 .25rem 0;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,.35);
+}
+header h2 {
+  font-size: .95rem;
+  margin: 0;
+  color: #fff; 
+  text-shadow: 0 1px 2px rgba(0,0,0,.35);
+}
 
 nav ul {
-    list-style: none; /* Supprime les puces des listes */
-    margin: 0; /* Supprime la marge */
-    padding: 0; /* Supprime le padding */
-    display: flex; /* Utilise Flexbox pour aligner les éléments sur une ligne */
-    justify-content: center; /* Centre les éléments horizontalement */
-    background-color: #333; /* Fond gris foncé pour la barre de navigation */
+  list-style: none;
+  margin: 0;
+  padding: 0 8px;
+  display: flex;
+  flex-wrap: wrap;   /* passe sur 2 lignes */
+  gap: 8px;
+  background-color: #333;
 }
+nav li { margin: 0; }
+nav a,
+nav a:link,
+nav a:visited {
+  color: #fff;              /* liens toujours blancs */
+  text-decoration: none;    /* pas de soulignement */
+  padding: 8px 10px;
+  display: inline-block;
+  border-radius: 8px;
+  font-size: .95rem;
+  transition: background-color .3s ease;
+}
+nav a:hover { background-color: #56b059; }
 
-nav li {
-    margin: 0 15px; /* Ajoute un espace de 15px entre chaque élément */
-}
-
-nav a {
-    color: white; /* Texte des liens en blanc */
-    text-decoration: none; /* Supprime le soulignement des liens */
-    padding: 14px 20px; /* Ajoute de l’espace autour du texte (effet bouton) */
-    display: inline-block; /* Permet de gérer la taille et le padding */
-    transition: background-color 0.3s; /* Animation fluide pour le changement de couleur */
-}
-
-nav a:hover {
-    background-color: #56b059; /* Fond vert au survol */
-}
 
 main {
-    max-width: 900px; /* Limite la largeur à 900px  */
-    margin: 20px auto; /* Centre et ajoute 20px */
-    padding: 20px; /* Ajoute de l’espace */
-    background-color: white; /* Fond blanc */
-    border-radius: 8px; /* Coins arrondis */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Ombre pour donner du relief */
+  max-width: 900px; 
+  margin: 12px auto;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.12);
+}
+main h1,
+main h2,
+main h3,
+main h4,
+main p {
+  color: #000;
+}
+main h2 {
+  color: #4CAF50;           /* garder le vert pour le titre */
 }
 
-
-h2 {
-    color: #4CAF50; /* Couleur verte pour les titres */
-    margin-bottom: 10px; /* Espace sous le titre */
-}
-
-h3 {
-    line-height: 1.6; /* Augmente l’espace entre les lignes pour la lisibilité */
-    color: #ffffff; /* Texte en gris foncé */
-}
-
-h4 {
-    line-height: 0.2; /* Augmente l’espace entre les lignes pour la lisibilité */
-    color: #ffffff; /* Texte en gris foncé */
-}
-
-p {
-    line-height: 1.6; /* Augmente l’espace entre les lignes pour la lisibilité */
-    color: #000000; /* Texte couleur */
-}
-
+/* Grille produits*/
 .container {
-    
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: row;
-    align-content:center,space-between;
-    order: 3;
-    background: #d6c2c2;
-    padding: 50px;
-    border-radius: 50px;
-    box-shadow: 0 6px 20px rgba(0,0,0,.06);
-    /*margin: 1rem, auto ; /* Centre et ajoute 20px */
-    gap : 90px;
-    margin-left: 50px;
-    margin-right: 50px;
-    flex-wrap: wrap;
-    background-image: url('../media/pictures/istockphoto-2160078318-612x612.jpg'); /* Image en fond */
-    background-size: cover; /* L'image couvre toute la zone */
-    background-position: center; /* Centrée */
-    background-repeat: no-repeat; /* Pas de répétition */
-    justify-content: center;
-    
-}
-.item{
-    display: flex;
-    flex-direction: column;
-    flex: 20 20 17%;
-    background: #77595974;
-    padding: 20px 24px;
-    border-radius: 20px;
-    box-shadow: 0 6px 20px rgba(0,0,0,.06);
-    margin-bottom: 20px ;
-    height: 280px;
-    text-align: center;
-    align-items: center;
-    
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  padding: 18px;
+  margin-left: 0;
+  margin-right: 0;
+  background-image: url('../media/pictures/istockphoto-2160078318-612x612.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+
+/* Boites produits */
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  background: rgba(119,89,89,0.45);
+  padding: 14px 16px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.08);
+  min-height: 50px;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+.item * { color: #fff; }
+
+.item img {
+  width: 88px;
+  height: 88px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+/* Prix */
+.item > span.item {
+  display: inline-block;
+  padding: 8px 10px;
+  border-radius: 14px;
+  background: rgba(0,0,0,0.28);
+  margin: 6px 0 10px 0;
+  font-size: .95rem;
+}
+
+/* Bouton panier  */
+.item button {
+  margin-top: auto;
+  align-self: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: #56b059;
+  color: #fff;
+  font-size: .95rem;
+  line-height: 1.2;
+  padding: 8px 12px;
+  max-width: 160px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.item button:hover { filter: brightness(1.06); }
+
+/* 2 colonnes si un peu plus large */
+@media (min-width: 480px) and (max-width: 767px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    padding: 20px;
+  }
+}
